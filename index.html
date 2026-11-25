@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="hu"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Business Widget – több rendelés a weboldaladról</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header class="nav"><b>🧩 Business Widget</b><div><a href="#elonyok">Előnyök</a><a href="#ar">Ár</a><button class="ghost th" aria-label="Téma">🌓</button><a class="btn ghost" href="app.html">Belépés</a><a class="btn" href="app.html#reg">Kipróbálom</a></div></header>
+<main>
+<section class="wrap hero"><div><h1>A látogatód látja: nyitva vagy, és ma még szállítasz.</h1><p>Egyetlen kódrészlet a weboldaladon: nyitvatartás, visszaszámláló, távolság és gyors kapcsolat. Több bizalom, több rendelés.</p><a class="btn" href="app.html#reg">Regisztrálok – 4,5 €/hó</a></div>
+<div class="mock" aria-label="Widget példa"><p>🟢 <b>Most nyitva</b></p><p>⌚ Ma 18:00-ig várjuk rendelésed</p><p>⏳ Már csak <b id="cd">01:47:22</b> maradt, hogy ma feldolgozzuk</p><p>🚚 Rendelj 13:00-ig, holnap kiszállítjuk</p></div></section>
+<section class="wrap" id="elonyok">
+<div class="row"><div class="rv"><h2>Nyitva vagy? Mondd el egy pillantásra.</h2><p>A zöld/piros állapot és a következő nyitás azonnal megnyugtatja a vásárlót, és kevesebb a felesleges telefon.</p></div><div class="vis">🟢</div></div>
+<div class="row rev"><div class="rv"><h2>A visszaszámláló sürget – barátságosan.</h2><p>Az utolsó órában élő számláló jelenik meg. Kifejezetten növeli a konverziót.</p></div><div class="vis">⏳</div></div>
+<div class="row"><div class="rv"><h2>Mutasd meg, milyen közel vagy.</h2><p>Egy kattintással megkapja a látogató a távolságot és az autóval szükséges időt. Te pedig mérhető adatot kapsz.</p></div><div class="vis">📍</div></div>
+<div class="row rev"><div class="rv"><h2>Egy kattintás a kapcsolatig.</h2><p>Hívás, e-mail, WhatsApp, Messenger. Nincs keresgélés, nincs elveszett ügyfél.</p></div><div class="vis">💬</div></div>
+<div class="row"><div class="rv"><h2>Kód bemásolva, kész.</h2><p>Regisztrálj, állítsd be, másold be. A beállításokat később bármikor módosíthatod, a kódot nem kell cserélni.</p></div><div class="vis">⚡</div></div>
+</section>
+<section class="wrap" id="ar"><div class="price"><h2>Egyszerű ár</h2><b>4,5 €</b><p style="margin:auto">nettó / hó. Minden modul benne van, bármikor leállíthatod.</p><br><a class="btn" href="app.html#reg">Regisztráció</a></div></section></main>
+<footer class="wrap"><small>© Business Widget · <a href="#" id="aszf">ÁSZF</a></small></footer>
+<dialog id="d"><h3>Általános Szerződési Feltételek</h3><p>Ide kerül a végleges ÁSZF szövege (szolgáltató adatai, díjak, felmondás, adatkezelés). Ez a szöveg helyőrző.</p><button onclick="d.close()">Bezárás</button></dialog>
+<script src="js/store.js"></script>
+<script>aszf.onclick=e=>{e.preventDefault();d.showModal()};let t=6442;setInterval(()=>{t--;cd.textContent=[t/3600|0,t/60%60|0,t%60].map(x=>String(x).padStart(2,0)).join(':')},1000)</script>
+</body></html>
